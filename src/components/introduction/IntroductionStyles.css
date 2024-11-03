@@ -1,0 +1,39 @@
+.introduction {
+    width: 100%;
+    height: 100vh;
+    background: url('../../assets/ingang.jpg') no-repeat center center/cover;
+}
+
+.introduction .container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.introduction .top {
+    margin-top: 25rem;
+    color: white;
+    text-shadow: 
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,   
+        -1px 1px 0 #000,   
+        1px 1px 0 #000;  
+}
+
+.introduction .bottom {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 4rem;
+}
+
+@media screen and (Max-width:540px) {
+    .power .container .bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+}
