@@ -4,6 +4,11 @@ import Introduction from './components/introduction/Introduction'
 import Nina from './components/nina/Nina'
 import View from './components/overview/View'
 import End from './components/end/End'
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+
+
+gsap.registerPlugin(useGSAP);
 
 
 function App() {

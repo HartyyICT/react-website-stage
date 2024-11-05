@@ -15,6 +15,9 @@
 
 .nina .top {
     margin-top: 25rem;
+    text-align: left; /* Zorg ervoor dat de tekst links uitgelijnd is */
+    margin-left: -1000px; /* Voeg een marge toe aan de linkerkant voor wat ruimte */
+    margin-top: 100px;
     color: white;
     text-shadow: 
         -1px -1px 0 #000,  
@@ -31,9 +34,12 @@
     margin-bottom: 4rem;
 }
 
+
+
 @media screen and (Max-width:540px) {
     .power .container .bottom {
         flex-direction: column;
         align-items: center;
     }
 }
+
