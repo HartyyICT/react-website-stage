@@ -20,10 +20,13 @@
     margin-top: 100px;
     color: white;
     text-shadow: 
-        -1px -1px 0 #000,  
-        1px -1px 0 #000,   
-        -1px 1px 0 #000,   
-        1px 1px 0 #000;  
+        -1px -1px 0 #00700f,  
+        1px -1px 0 #00700f,   
+        -1px 1px 0 #00700f,   
+        1px 1px 0 #00700f;  
+        background-image: url('../../assets/paper.jpg');
+        background-size: flex;
+        
 }
 
 .nina .bottom {
