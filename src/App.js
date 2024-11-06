@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from './components/navar/Navbar'
 import Introduction from './components/introduction/Introduction'
 import Nina from './components/nina/Nina'
+import Struggle from './components/struggle/Struggle'
 import View from './components/overview/View'
 import End from './components/end/End'
 import { gsap } from "gsap";
@@ -16,7 +17,8 @@ function App() {
         <>
             <Navbar />
             <Introduction />
-            <Nina />
+            <Nina /> 
+            <Struggle/>        
             <View />
             <End />
         </>
