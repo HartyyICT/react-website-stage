@@ -1,9 +1,9 @@
-.nina {
+.struggle {
     width: 100%;
     height: 100vh;
 }
 
-.nina .container {
+.struggle .container {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -12,23 +12,17 @@
     align-items: center;
 }
 
-.nina .top {
+.struggle .top {
     margin-top: 25rem;
-    text-align: left; /* Zorg ervoor dat de tekst links uitgelijnd is */
-    margin-left: -1000px; /* Voeg een marge toe aan de linkerkant voor wat ruimte */
-    margin-top: 100px;
     color: white;
     text-shadow: 
-        -1px -1px 0 #00700f,  
-        1px -1px 0 #00700f,   
-        -1px 1px 0 #00700f,   
-        1px 1px 0 #00700f;  
-        background-image: url('../../assets/paper.jpg');
-        background-size: flex;
-        
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,   
+        -1px 1px 0 #000,   
+        1px 1px 0 #000;  
 }
 
-.nina .bottom {
+.struggle .bottom {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -44,4 +38,3 @@
         align-items: center;
     }
 }
-

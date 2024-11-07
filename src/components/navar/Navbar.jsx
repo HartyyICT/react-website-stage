@@ -28,6 +28,7 @@ const Navbar = () => {
 
                 {/*This code is when you click on a Title for example Afsluiting, you will be directed to that page*/}
                 <ul className={nav ? 'nav-menu active' : 'nav-menu' }>
+                <li><a href="/"><Link activeClass="active" to="pagina1" spy={true} smooth={true} duration={500}>Pagina1</Link></a></li>    
                 <li><a href="/"><Link activeClass="active" to="introduction" spy={true} smooth={true} duration={500}>Introductie</Link></a></li>
                 <li><a href="/"><Link activeClass="active" to="nina" spy={true} smooth={true} duration={500}>Nina</Link></a></li>
                 <li><a href="/"><Link activeClass="active" to="view" spy={true} smooth={true} duration={500}>Overzicht</Link></a></li>
