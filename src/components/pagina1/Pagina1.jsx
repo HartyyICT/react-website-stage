@@ -8,7 +8,7 @@ const Pagina1 = () => {
         <div name= 'pagina1' className='pagina1'>
             <div className="container">
                 <div className="top">
-                <h1> Dit is pagina 1 </h1>
+                <h1> Scroll en ontdek het verhaal van Nina </h1>
             </div>
             <div className="bottom">
                 <button className="btn btn-dark">Scrollytelling</button>

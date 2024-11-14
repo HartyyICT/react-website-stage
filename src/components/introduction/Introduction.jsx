@@ -9,7 +9,8 @@ const Introduction = () => {
       <div name='introduction' className='introduction'>
         <div className="container">
           <div className="top">
-            <h1>Scroll om de verhalen van Heerlen te ontdekken</h1>
+            <h1>De stem van Heerlen</h1>
+            <p>Empathie door data</p>
           </div>
           <div className="bottom">
             <button className="btn btn-dark">Scrollytelling</button>
