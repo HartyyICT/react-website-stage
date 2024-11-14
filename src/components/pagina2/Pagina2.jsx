@@ -1,12 +1,12 @@
 import React from 'react';
 import { Parallax } from 'react-parallax';
-import './IntroductionStyles.css';
+import './Pagina2Styles.css'
 
 
-const Introduction = () => {
+const Pagina2 = () => {
   return (
     <Parallax bgImage={require('../../assets/ingang.jpg')} strength={300}>
-      <div name='introduction' className='introduction'>
+      <div name='pagina2' className='pagina2'>
         <div className="container">
           <div className="top">
             <h1>De stem van Heerlen</h1>
@@ -21,4 +21,4 @@ const Introduction = () => {
   );
 };
 
-export default Introduction;
+export default Pagina2;

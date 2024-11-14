@@ -1,14 +1,14 @@
 import React from 'react'
 import { Parallax } from 'react-parallax'
-import './StruggleStyle.css'
+import './Pagina3Styles.css'
 
-const Struggle = () => {
+const Pagina3 = () => {
   return (
     <Parallax bgImage={require('../../assets/frustratie.jpg')} strength={300}>
-      <div name= 'struggle' className='struggle'>
+      <div name= 'pagina3' className='pagina3'>
           <div className="container">
               <div className="top">
-                <h1> struggle </h1>
+                <h1> Dit is pagina 3 </h1>
             </div>
             <div className="bottom">
               <button className="btn btn-dark">Scrollytelling</button>
@@ -19,4 +19,4 @@ const Struggle = () => {
   )
 }
 
-export default Struggle
+export default Pagina3;
