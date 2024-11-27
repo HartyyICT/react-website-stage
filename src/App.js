@@ -8,12 +8,7 @@ import Nina from './components/nina/Nina'
 import Pagina3 from "./components/pagina3/Pagina3"
 import View from './components/overview/View'
 import End from './components/end/End'
-import { gsap } from "gsap";
-import { useGSAP } from "@gsap/react";
-
-
-gsap.registerPlugin(useGSAP);
-
+import Test from './components/TekstBlokken/Test'
 
 function App() {
     return (
@@ -26,10 +21,12 @@ function App() {
             <Nina /> 
             <Pagina2Tekst />
             <Pagina3/>   
-            <Pagina2Tekst />     
+            <Pagina2Tekst /> 
             <View />
             <Pagina2Tekst />
             <End />
+            <Pagina2Tekst />
+            <Test />
         </>
     );
 }

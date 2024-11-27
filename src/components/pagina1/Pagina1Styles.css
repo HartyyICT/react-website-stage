@@ -3,6 +3,11 @@
     to { opacity: 1; }
 }
 
+.pagina1 .container svg {
+    margin-top: 2rem;
+    background-color: #000000;
+  }
+  
 .pagina1 {
     animation: fadeIn 1.5s ease-in;
 }

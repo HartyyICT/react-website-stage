@@ -30,7 +30,21 @@
     margin-bottom: 4rem;
 }
 
+.chart-container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
+.dataCard {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
 @media screen and (Max-width:540px) {
     .power .container .bottom {
