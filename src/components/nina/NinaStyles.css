@@ -14,7 +14,7 @@
 
 .nina .top {
     text-align: left; /* Zorg ervoor dat de tekst links uitgelijnd is */
-    margin-left: -25rem; /* Voeg een marge toe aan de linkerkant voor wat ruimte */
+    margin-left: -25rem; /* Voegt een marge toe aan de linkerkant voor wat ruimte */
     margin-top: 100px;
     color: rgb(78, 78, 78);
     padding: 1%;
@@ -43,14 +43,22 @@
         flex-direction: column;
         align-items: center;
     }
+
+    .nina .top h1 {
+        font-size: 1.2rem; /* Kleinere tekst voor mobiel */
+    }
+
+    .nina .top p {
+        font-size: 1rem; /* Verklein de paragrafen tekst */
+    }
 }
 
 @media screen and (max-width:700px) {
     .nina .top {
-        margin-left: 0; /* Verwijder de negatieve marge voor mobiel */
-        margin-top: 20px; /* Verklein de marge aan de bovenkant */
+        margin-left: 20px; /* Verwijder de negatieve marge voor mobiel */
+        margin-top: 50px;
+        margin-right: 20px; /* Verklein de marge aan de bovenkant */
         padding: 2%; /* Geef meer ruimte aan de binnenkant voor een betere leesbaarheid */
-        font-size: 1rem; /* Verklein de fontgrootte voor mobiel */
         background-size: cover;
     }
 }

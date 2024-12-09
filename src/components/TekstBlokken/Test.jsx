@@ -139,6 +139,7 @@ const Test = () => {
 
   return (
     <Parallax bgImage={require('../../assets/start.jpg')} strength={300}>
+      
       <div name='test' className='test'>
       <div className="container">
           <svg ref={lineChartRef} className='linechart'></svg>

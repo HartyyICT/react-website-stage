@@ -1,54 +1,105 @@
 .pagina3 {
     width: 100%;
     height: 100vh;
-}
-
-.pagina3 .container {
+    transition: background-image 1s ease-out; /* Vloeibare overgang voor de achtergrondafbeelding */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .text-box {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease-out; 
+    background-color: rgb(255, 251, 0);
+    padding: 40px; /* Meer ruimte aan de binnenkant */
+    border-radius: 8px; /* Maak de hoeken iets ronder */
+    box-shadow: 10px 20px 15px rgba(0, 0, 0, 0.3); /* Versterk de schaduw */
+    text-align: center;
+    max-width: 600px; /* Breder maken */
+    width: 90%; /* Past zich aan de containerbreedte aan */
+    position: relative;
+    left: 500px; /* Zet de tekstbox meer naar het midden */
+    top: 100px; /* Pas verticale positie aan */
+    font-size: 30px; /* Verhoog tekstgrootte */
+    line-height: 1.6; /* Verbeter leesbaarheid */
+  }
+  
+  .second-text-box {
+    background-color: rgb(0, 191, 255); /* Geef een andere achtergrondkleur als voorbeeld */
+    box-shadow: 10px 20px 15px rgba(0, 0, 0, 0.3); /* Zelfde schaduw als de eerste box */
+    transition: all 1s ease-out;
+    position: relative;
+    top: 50px;
+    padding: 40px;
+    font-size: 30px;
+    border-radius: 8px;
+    max-width: 600px;
+  }
+  
+  .third-text-box {
+    background-color: rgb(144, 238, 144); /* Groene achtergrond als voorbeeld */
+    box-shadow: 10px 20px 15px rgba(0, 0, 0, 0.3); /* Zelfde schaduw als de andere boxes */
+    transition: all 1s ease-out;
+    position: relative;
+    top: 25px; /* Pas aan voor juiste positionering */
+    padding: 40px;
+    font-size: 30px;
+    border-radius: 8px;
+    max-width: 600px;
+  }
+  
+  .text-box.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .pagina3 .container {
     width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-}
-
-.pagina3 .top {
+  }
+  
+  .pagina3 .top {
     margin-top: 25rem;
     color: white;
     text-shadow: 
-        -1px -1px 0 #000,  
-        1px -1px 0 #000,   
-        -1px 1px 0 #000,   
-        1px 1px 0 #000;  
-}
-
-.pagina3 .bottom {
+      -1px -1px 0 #000,  
+      1px -1px 0 #000,   
+      -1px 1px 0 #000,   
+      1px 1px 0 #000;  
+  }
+  
+  .pagina3 .bottom {
     display: flex;
     justify-content: center;
     width: 100%;
     max-width: 600px;
     margin-bottom: 4rem;
-}
-
-.chart-container {
+  }
+  
+  .chart-container {
     width: 80%;
     margin: auto;
     padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
-}
-
-.dataCard {
+  }
+  
+  .dataCard {
     background-color: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-@media screen and (Max-width:540px) {
+  }
+  
+  @media screen and (Max-width:540px) {
     .power .container .bottom {
-        flex-direction: column;
-        align-items: center;
+      flex-direction: column;
+      align-items: center;
     }
-}
+  }
+  
