@@ -34,7 +34,7 @@ const Pagina3 = () => {
         // Verander de achtergrondafbeelding wanneer de tweede box zichtbaar wordt
         if (entry.isIntersecting) {
           setImageTransition(true); // Zet overgang in gang
-          setBgImage(require('../../assets/frustratie.jpg')); // Update naar een andere afbeelding
+          setBgImage(require('../../assets/ninastruggle.jpg')); // Update naar een andere afbeelding
         }
       },
       {
@@ -49,7 +49,7 @@ const Pagina3 = () => {
         // Verander de achtergrondafbeelding wanneer de derde box zichtbaar wordt
         if (entry.isIntersecting) {
           setImageTransition(true); // Zet overgang in gang
-          setBgImage(require('../../assets/studentenhuis.jpg')); // Update naar een andere afbeelding
+          setBgImage(require('../../assets/ninastruggle2.jpg')); // Update naar een andere afbeelding
         }
       },
       {

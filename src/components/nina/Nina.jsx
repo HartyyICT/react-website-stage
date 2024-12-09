@@ -4,7 +4,7 @@ import './NinaStyles.css';
 
 const Nina = () => {
   return (
-    <Parallax bgImage={require('../../assets/introductienina.jpg')} strength={300}>
+    <Parallax bgImage={require('../../assets/studentenhuis.jpg')} strength={300}>
       <div name='nina' className='nina'>
         <div className="container">
           <div className="top">
