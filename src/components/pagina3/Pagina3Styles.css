@@ -22,6 +22,8 @@
     top: 100px; /* Pas verticale positie aan */
     font-size: 30px; /* Verhoog tekstgrootte */
     line-height: 1.6; /* Verbeter leesbaarheid */
+    background-image: url('../../assets/paper.jpg');
+    background-size: cover;
   }
   
   .second-text-box {

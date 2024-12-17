@@ -4,11 +4,14 @@ import './EndStyles.css'
 
 const End = () => {
   return (
-    <Parallax bgImage={require('../../assets/Eind.jpg')} strength={300}>
+    <Parallax bgImage={require('../../assets/padennina.jpg')} strength={300}>
       <div name= 'end' className='end'>
           <div className="container">
               <div className="top">
-                <h1>Overzicht grafieken als einde</h1>
+                <p>Nina maakt zich zorgen over haar toekomst in een concurrerende arbeidsmarkt</p>
+            </div>
+            <div className="top2">
+                <p>Waar werkervaring en connecties doorslaggevend zijn</p>
             </div>
             <div className="bottom">
               <button className="btn btn-dark">Scrollytelling</button>

@@ -1,0 +1,36 @@
+.profile-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    max-width: 400px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .profile-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sender-name {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .message {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #555;
+  }
+  

@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {FaBars, FaFacebook, FaTimes, FaInstagram} from 'react-icons/fa'
 import './NavbarStyles.css'
-import limelogo from '../../assets/limelogo.jpg';
+import limelogo from '../../assets/limelogo.png';
 import { Link } from 'react-scroll' // import link for smooth scrolling between the pages
 
 // definition Navbar
@@ -23,7 +23,7 @@ const Navbar = () => {
                 {/* Logo section with optional slide effect when the menu is opened */}
                 <div className={slide ? 'logo slide-right' : 'logo'}>
                     {/*<h3>Lime</h3> */}
-                    <img src={limelogo} alt="limelogo" style={{ height: '40px' }}/>
+                    <img src={limelogo} alt="limelogo" style={{ height: '60px' }}/>
                 </div>
 
                 {/*This code is when you click on a Title for example Afsluiting, you will be directed to that page*/}

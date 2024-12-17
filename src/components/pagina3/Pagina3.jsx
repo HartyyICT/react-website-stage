@@ -53,7 +53,7 @@ const Pagina3 = () => {
         }
       },
       {
-        rootMargin: "0px 0px -300px 0px", // Boxen worden zichtbaar als ze 200px boven de viewport komen
+        rootMargin: "0px 0px -180px 0px", // Boxen worden zichtbaar als ze 200px boven de viewport komen
         threshold: 0.5
       }
     );

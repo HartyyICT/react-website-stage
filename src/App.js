@@ -17,15 +17,15 @@ function App() {
             <Pagina1 />
             <Pagina1Tekst/>
             <Pagina2 />
-            <Pagina2Tekst />
+            <Pagina1Tekst/>
             <Nina /> 
-            <Pagina2Tekst />
+            <Pagina1Tekst/>
             <Pagina3/>   
-            <Pagina2Tekst /> 
+            <Pagina1Tekst/>
             <View />
-            <Pagina2Tekst />
+            <Pagina1Tekst/>
             <End />
-            <Pagina2Tekst />
+            <Pagina1Tekst/>
             <Test />
         </>
     );
