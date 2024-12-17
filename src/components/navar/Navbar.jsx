@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {FaBars, FaFacebook, FaTimes, FaInstagram} from 'react-icons/fa'
 import './NavbarStyles.css'
-import limelogo from '../../assets/limelogo.jpg';
+import limelogo from '../../assets/limelogo.png';
 import { Link } from 'react-scroll' // import link for smooth scrolling between the pages
 
 // definition Navbar
@@ -23,13 +23,13 @@ const Navbar = () => {
                 {/* Logo section with optional slide effect when the menu is opened */}
                 <div className={slide ? 'logo slide-right' : 'logo'}>
                     {/*<h3>Lime</h3> */}
-                    <img src={limelogo} alt="limelogo" style={{ height: '40px' }}/>
+                    <img src={limelogo} alt="limelogo" style={{ height: '60px' }}/>
                 </div>
 
                 {/*This code is when you click on a Title for example Afsluiting, you will be directed to that page*/}
                 <ul className={nav ? 'nav-menu active' : 'nav-menu' }>
-                <li><a href="/"><Link activeClass="active" to="pagina1" spy={true} smooth={true} duration={500}>Pagina1</Link></a></li>    
-                <li><a href="/"><Link activeClass="active" to="introduction" spy={true} smooth={true} duration={500}>Introductie</Link></a></li>
+                <li><a href="/"><Link activeClass="active" to="pagina1" spy={true} smooth={true} duration={500}>Intro</Link></a></li>    
+                <li><a href="/"><Link activeClass="active" to="pagina2" spy={true} smooth={true} duration={500}>Titel</Link></a></li>
                 <li><a href="/"><Link activeClass="active" to="nina" spy={true} smooth={true} duration={500}>Nina</Link></a></li>
                 <li><a href="/"><Link activeClass="active" to="view" spy={true} smooth={true} duration={500}>Overzicht</Link></a></li>
                 <li><a href="/"><Link activeClass="active" to="end" spy={true} smooth={true} duration={500}>Afsluiting</Link></a></li>

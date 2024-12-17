@@ -1,7 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
+
 .nina {
     width: 100%;
     height: 100vh;
 }
+
+
+.nina .portrait {
+    position: relative;
+    top: 150px;
+    right: 400px;
+    display: flex;
+    justify-content: center; /* Zorgt dat de afbeelding gecentreerd is */
+}
+
+.nina-portret {
+    width: 300px; /* Breedte van de afbeelding */
+    height: 300px; /* Hoogte van de afbeelding */
+    border-radius: 50%; /* Maakt de afbeelding rond */
+    object-fit: cover; /* Zorgt dat de afbeelding netjes past binnen de cirkel */
+    box-shadow: 10px 20px 15px rgba(0, 0, 0, 0.3); /* Subtiele schaduw */
+}
+
 
 .nina .container {
     width: 100%;
@@ -13,20 +33,21 @@
 }
 
 .nina .top {
-    margin-top: 25rem;
     text-align: left; /* Zorg ervoor dat de tekst links uitgelijnd is */
-    margin-left: -1000px; /* Voeg een marge toe aan de linkerkant voor wat ruimte */
-    margin-top: 100px;
-    color: white;
-    text-shadow: 
-        -1px -1px 0 #00700f,  
-        1px -1px 0 #00700f,   
-        -1px 1px 0 #00700f,   
-        1px 1px 0 #00700f;  
-        background-image: url('../../assets/paper.jpg');
-        background-size: flex;
-        
+    left: -25rem; /* Voegt een marge toe aan de linkerkant voor wat ruimte */
+    font-family: 'Mynerve', sans-serif;
+    top: 100px;
+    color: rgb(78, 78, 78);
+    padding: 1%;
+    background-image: url('../../assets/paper.jpg');
+    background-size: cover;
+    box-shadow: 10px 20px 15px rgba(0, 0, 0, 0.3);         
 }
+
+.nina .top p {
+    font-size: 2rem;
+}
+
 
 .nina .bottom {
     display: flex;
@@ -43,5 +64,22 @@
         flex-direction: column;
         align-items: center;
     }
+
+    .nina .top h1 {
+        font-size: 1.2rem; /* Kleinere tekst voor mobiel */
+    }
+
+    .nina .top p {
+        font-size: 1rem; /* Verklein de paragrafen tekst */
+    }
 }
 
+@media screen and (max-width:700px) {
+    .nina .top {
+        margin-left: 20px; /* Verwijder de negatieve marge voor mobiel */
+        margin-top: 50px;
+        margin-right: 20px; /* Verklein de marge aan de bovenkant */
+        padding: 2%; /* Geef meer ruimte aan de binnenkant voor een betere leesbaarheid */
+        background-size: cover;
+    }
+}

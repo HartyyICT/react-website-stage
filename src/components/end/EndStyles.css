@@ -13,13 +13,33 @@
 }
 
 .end .top {
-    margin-top: 25rem;
-    color: white;
-    text-shadow: 
-        -1px -1px 0 #000,  
-        1px -1px 0 #000,   
-        -1px 1px 0 #000,   
-        1px 1px 0 #000;  
+    position: relative;
+    right: 600px;
+    top: 200px;
+    max-width: 300px;
+    text-align: left; /* Zorg ervoor dat de tekst links uitgelijnd is */
+    font-family: 'Mynerve', sans-serif;
+    font-size: 1.5rem;
+    color: rgb(78, 78, 78);
+    padding: 1%;
+    background-image: url('../../assets/paper.jpg');
+    background-size: cover;
+    box-shadow: 10px 20px 15px rgba(0, 0, 0, 0.3);
+}
+
+.end .top2 {
+    position: relative;
+    left: 500px;
+    top: 100px;
+    max-width: 300px;
+    text-align: left; /* Zorg ervoor dat de tekst links uitgelijnd is */
+    font-family: 'Mynerve', sans-serif;
+    font-size: 1.5rem;
+    color: rgb(78, 78, 78);
+    padding: 1%;
+    background-image: url('../../assets/paper.jpg');
+    background-size: cover;
+    box-shadow: 10px 20px 15px rgba(0, 0, 0, 0.3);
 }
 
 .end .bottom {
