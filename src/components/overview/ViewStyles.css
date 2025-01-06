@@ -32,7 +32,7 @@
 
 .view .bottom .profile-box{
     position: relative;
-    bottom: 600px;
+    bottom: 300px;
     right: 400px;
     display: flex;
     justify-content: center;
@@ -54,6 +54,31 @@
     border-radius: 10px;
 }
 
+.view .bottom .profile-box3 {
+    position: relative;
+    bottom: 600px;
+    left: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.view .bottom .profile-box4 {
+    position: relative;
+    bottom: 300px;
+    right: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+
 .profile-box {
     display: flex;
     flex-direction: row;
@@ -68,6 +93,32 @@
 }
 
 .profile-box2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    max-width: 400px;
+    width: 100%;
+}
+
+.profile-box3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    max-width: 400px;
+    width: 100%;
+}
+
+.profile-box4 {
     display: flex;
     flex-direction: row;
     align-items: center;

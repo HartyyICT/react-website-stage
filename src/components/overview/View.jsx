@@ -43,6 +43,39 @@ const View = () => {
                 </p>
               </div>
             </div>
+
+            {/* Tweede Profile Box */}
+            <div className="profile-box3">
+              <img
+                src="https://via.placeholder.com/50"
+                alt="Andere persoon"
+                className="profile-image"
+              />
+              <div className="profile-content">
+                <h3 className="sender-name">Andere persoon</h3>
+                <p className="message">
+                  Nina, vergeet niet om wat tijd voor jezelf te nemen. Je doet het geweldig!
+                </p>
+              </div>
+            </div>
+
+            {/* Tweede Profile Box */}
+            <div className="profile-box4">
+              <img
+                src="https://via.placeholder.com/50"
+                alt="Andere persoon"
+                className="profile-image"
+              />
+              <div className="profile-content">
+                <h3 className="sender-name">Andere persoon</h3>
+                <p className="message">
+                  Nina, vergeet niet om wat tijd voor jezelf te nemen. Je doet het geweldig!
+                </p>
+              </div>
+            </div>
+
+
+
           </div>
         </div>
       </div>
