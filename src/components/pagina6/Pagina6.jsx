@@ -17,9 +17,10 @@ const Pagina6 = () => {
     const svg = d3.select(pieChartRef.current)
       .attr('width', width)
       .attr('height', height)
+      .style('background-color', 'rgba(255, 255, 255, 0)') // Dit maakt de achtergrond transparant
       .append('g')
-      .style('background-color', 'rgba(255, 255, 255, 0)')
       .attr('transform', `translate(${width / 2}, ${height / 2})`);
+
 
     const color = d3.scaleOrdinal()
       .domain(pieData)
@@ -40,6 +41,8 @@ const Pagina6 = () => {
       .attr('fill', d => color(d.index))
       .attr('stroke', 'white')
       .style('stroke-width', '2px');
+
+      
   }, []);
 
   return (

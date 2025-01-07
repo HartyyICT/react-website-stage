@@ -57,13 +57,12 @@
     width: 600px;
     height: 600px;
     display: block;
-    background-color: rgba(255, 255, 255, 0); /* Volledig transparant */
+    background-color: transparent; /* Transparant maken */
     border-radius: 12px;
     box-shadow: 10px 20px 15px rgba(0, 0, 0, 0.3);
     overflow: visible;
 }
 
-  
   .chart-container {
     position: relative; 
     bottom: 100px;
@@ -72,6 +71,7 @@
     justify-content: center;
   }
   
+
 
 @media screen and (Max-width:540px) {
     .power .container .bottom {
