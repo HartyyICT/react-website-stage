@@ -14,8 +14,9 @@
 
 .end .top {
     position: relative;
-    right: 600px;
-    top: 200px;
+    right: 700px;
+    top: 150px;
+    z-index: 10;
     max-width: 300px;
     text-align: left; /* Zorg ervoor dat de tekst links uitgelijnd is */
     font-family: 'Mynerve', sans-serif;
@@ -49,6 +50,28 @@
     max-width: 600px;
     margin-bottom: 4rem;
 }
+
+/* Eigenschappen Profile boxen */
+
+.piechart { 
+    width: 600px;
+    height: 600px;
+    display: block;
+    background-color: rgba(255, 255, 255, 0); /* Volledig transparant */
+    border-radius: 12px;
+    box-shadow: 10px 20px 15px rgba(0, 0, 0, 0.3);
+    overflow: visible;
+}
+
+  
+  .chart-container {
+    position: relative; 
+    bottom: 100px;
+    right: 300px;
+    display: flex;
+    justify-content: center;
+  }
+  
 
 @media screen and (Max-width:540px) {
     .power .container .bottom {
