@@ -40,8 +40,6 @@ function App() {
             <Pagina10/>
             <Pagina1Tekst/>
             <Pagina11/>
-            <Pagina1Tekst/>
-            <Test />
         </>
     );
 }

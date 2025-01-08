@@ -51,7 +51,7 @@
     margin-bottom: 4rem;
 }
 
-/* Eigenschappen Profile boxen */
+/* Eigenschappen grafieken*/
 
 .piechart { 
     width: 600px;
@@ -59,19 +59,32 @@
     display: block;
     background-color: transparent; /* Transparant maken */
     border-radius: 12px;
-    box-shadow: 10px 20px 15px rgba(0, 0, 0, 0.3);
-    overflow: visible;
+ 
 }
 
   .chart-container {
     position: relative; 
     bottom: 100px;
-    right: 300px;
+    opacity: 50%;
     display: flex;
     justify-content: center;
   }
-  
 
+
+.piechart, .barchart {
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 10px;
+
+}
+
+.barchart {
+    position: relative;
+    left: 900px;
+    bottom: 400px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+}
+  
 
 @media screen and (Max-width:540px) {
     .power .container .bottom {

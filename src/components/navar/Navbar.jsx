@@ -31,13 +31,13 @@ const Navbar = () => {
                 <li><a href="/"><Link activeClass="active" to="pagina1" spy={true} smooth={true} duration={500}>Intro</Link></a></li>    
                 <li><a href="/"><Link activeClass="active" to="pagina2" spy={true} smooth={true} duration={500}>Titel</Link></a></li>
                 <li><a href="/"><Link activeClass="active" to="nina" spy={true} smooth={true} duration={500}>Nina</Link></a></li>
-                <li><a href="/"><Link activeClass="active" to="view" spy={true} smooth={true} duration={500}>Overzicht</Link></a></li>
-                <li><a href="/"><Link activeClass="active" to="end" spy={true} smooth={true} duration={500}>Afsluiting</Link></a></li>
+                <li><a href="/"><Link activeClass="active" to="pagina7" spy={true} smooth={true} duration={500}>Overgang</Link></a></li>
+                <li><a href="/"><Link activeClass="active" to="pagina11" spy={true} smooth={true} duration={500}>Afsluiting</Link></a></li>
 
 
                     {/* Mobile menu for social icons and additional links */}
                     <div className="mobile-menu">
-                        <button>Info</button>
+                        <button>Start</button>
                         <div className="social-icons">
                             <FaFacebook className='icon' />
                             <FaInstagram className='icon' />
@@ -48,7 +48,7 @@ const Navbar = () => {
 
                 {/* Additional hidden menu for the "Info" link in smaller screens */}
                 <ul className="nav-menu hide">
-                    <li> <a href="/">Info</a></li>
+                    <li> <a href="/">Start</a></li>
                 </ul>
 
                 {/* Hamburger menu icon for toggling the mobile menu */}

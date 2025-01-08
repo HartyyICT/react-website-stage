@@ -20,7 +20,7 @@ const Pagina3 = () => {
             <p> Ze hoopt dat haar verhaal een beter begrip kan creëren van de situatie van veel jonge mensen in Heerlen. </p>
           </div>
           <div className="bottom">
-            <button className="btn btn-dark">Scroll naar onder :)</button>
+            <button className="btn btn-dark">Scrollytelling</button>
           </div>
         </div>
       </div>

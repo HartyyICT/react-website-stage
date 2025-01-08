@@ -12,9 +12,6 @@ const Pagina2 = () => {
             <h1>De stem van Heerlen</h1>
             <p>Empathie door data</p>
           </div>
-          <div className="bottom">
-            <button className="btn btn-dark">Scrollytelling</button>
-          </div>
         </div>
       </div>
     </Parallax>  

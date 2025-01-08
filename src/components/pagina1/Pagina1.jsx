@@ -12,9 +12,6 @@ const Pagina1 = () => {
           <div className="top">
             <h1> Scroll en ontdek het verhaal van Nina </h1>
           </div>
-          <div className="bottom">
-            <button className="btn btn-dark">Scrollytelling</button>
-          </div>
         </div>
       </div>
     </Parallax>

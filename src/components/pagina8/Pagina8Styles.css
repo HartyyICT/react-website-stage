@@ -18,7 +18,7 @@
     margin-top: 25rem;
     align-items: center;
     color: white;
-    max-width: 70rem;
+    max-width: 30rem;
     text-shadow: 
         -1px -1px 0 #000,  
         1px -1px 0 #000,   
@@ -30,6 +30,13 @@
         padding : 1rem;
         font-size: 1.5rem;
         letter-spacing: 3px;  
+    z-index: 10;
+}
+
+.imagecontainer {
+    position: relative;
+    bottom: 450px;
+    z-index: 5;
 }
 
 .pagina8 .bottom {
