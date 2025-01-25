@@ -14,8 +14,9 @@
 
 .end .top {
     position: relative;
-    right: 600px;
-    top: 200px;
+    right: 700px;
+    top: 150px;
+    z-index: 10;
     max-width: 300px;
     text-align: left; /* Zorg ervoor dat de tekst links uitgelijnd is */
     font-family: 'Mynerve', sans-serif;
@@ -49,6 +50,41 @@
     max-width: 600px;
     margin-bottom: 4rem;
 }
+
+/* Eigenschappen grafieken*/
+
+.piechart { 
+    width: 600px;
+    height: 600px;
+    display: block;
+    background-color: transparent; /* Transparant maken */
+    border-radius: 12px;
+ 
+}
+
+  .chart-container {
+    position: relative; 
+    bottom: 100px;
+    opacity: 50%;
+    display: flex;
+    justify-content: center;
+  }
+
+
+.piechart, .barchart {
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 10px;
+
+}
+
+.barchart {
+    position: relative;
+    left: 900px;
+    bottom: 400px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+}
+  
 
 @media screen and (Max-width:540px) {
     .power .container .bottom {

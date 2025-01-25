@@ -1,0 +1,57 @@
+.pagina9 {
+    width: 100%;
+    height: 100vh;
+}
+
+.pagina9 .container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pagina9 .top {
+    position: relative;
+    bottom: 200px;
+    right: 600px;
+    margin-top: 25rem;
+    align-items: center;
+    color: white;
+    max-width: 30rem;
+    text-shadow: 
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,   
+        -1px 1px 0 #000,   
+        1px 1px 0 #000;
+        background-color: black;
+        text-transform: uppercase;
+        color: #fff;
+        padding : 1rem;
+        font-size: 1.5rem;
+        letter-spacing: 3px;  
+    z-index: 10;
+}
+
+.pagina9 .bottom {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 4rem;
+}
+
+.image2 {
+    position: relative;
+    bottom: 800px;
+    left: 200px;
+    z-index: 5;
+}
+
+@media screen and (Max-width:540px) {
+    .power .container .bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+}

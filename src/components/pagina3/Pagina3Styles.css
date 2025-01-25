@@ -1,107 +1,85 @@
-.pagina3 {
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
+
+.nina {
     width: 100%;
     height: 100vh;
-    transition: background-image 1s ease-out; /* Vloeibare overgang voor de achtergrondafbeelding */
-    background-size: cover;
-    background-position: center;
-  }
-  
-  .text-box {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 1s ease-out; 
-    background-color: rgb(255, 251, 0);
-    padding: 40px; /* Meer ruimte aan de binnenkant */
-    border-radius: 8px; /* Maak de hoeken iets ronder */
-    box-shadow: 10px 20px 15px rgba(0, 0, 0, 0.3); /* Versterk de schaduw */
-    text-align: center;
-    max-width: 600px; /* Breder maken */
-    width: 90%; /* Past zich aan de containerbreedte aan */
+}
+
+
+.nina .portrait {
     position: relative;
-    left: 500px; /* Zet de tekstbox meer naar het midden */
-    top: 100px; /* Pas verticale positie aan */
-    font-size: 30px; /* Verhoog tekstgrootte */
-    line-height: 1.6; /* Verbeter leesbaarheid */
-    background-image: url('../../assets/paper.jpg');
-    background-size: cover;
-  }
-  
-  .second-text-box {
-    background-color: rgb(0, 191, 255); /* Geef een andere achtergrondkleur als voorbeeld */
-    box-shadow: 10px 20px 15px rgba(0, 0, 0, 0.3); /* Zelfde schaduw als de eerste box */
-    transition: all 1s ease-out;
-    position: relative;
-    top: 50px;
-    padding: 40px;
-    font-size: 30px;
-    border-radius: 8px;
-    max-width: 600px;
-  }
-  
-  .third-text-box {
-    background-color: rgb(144, 238, 144); /* Groene achtergrond als voorbeeld */
-    box-shadow: 10px 20px 15px rgba(0, 0, 0, 0.3); /* Zelfde schaduw als de andere boxes */
-    transition: all 1s ease-out;
-    position: relative;
-    top: 25px; /* Pas aan voor juiste positionering */
-    padding: 40px;
-    font-size: 30px;
-    border-radius: 8px;
-    max-width: 600px;
-  }
-  
-  .text-box.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
-  .pagina3 .container {
+    top: 150px;
+    right: 400px;
+    display: flex;
+    justify-content: center; /* Zorgt dat de afbeelding gecentreerd is */
+}
+
+.nina-portret {
+    width: 300px; /* Breedte van de afbeelding */
+    height: 300px; /* Hoogte van de afbeelding */
+    border-radius: 50%; /* Maakt de afbeelding rond */
+    object-fit: cover; /* Zorgt dat de afbeelding netjes past binnen de cirkel */
+    box-shadow: 10px 20px 15px rgba(0, 0, 0, 0.3); /* Subtiele schaduw */
+}
+
+
+.nina .container {
     width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  .pagina3 .top {
-    margin-top: 25rem;
-    color: white;
-    text-shadow: 
-      -1px -1px 0 #000,  
-      1px -1px 0 #000,   
-      -1px 1px 0 #000,   
-      1px 1px 0 #000;  
-  }
-  
-  .pagina3 .bottom {
+}
+
+.nina .top {
+    text-align: left; /* Zorg ervoor dat de tekst links uitgelijnd is */
+    left: -25rem; /* Voegt een marge toe aan de linkerkant voor wat ruimte */
+    font-family: 'Mynerve', sans-serif;
+    top: 100px;
+    color: rgb(78, 78, 78);
+    padding: 1%;
+    background-image: url('../../assets/paper.jpg');
+    background-size: cover;
+    box-shadow: 10px 20px 15px rgba(0, 0, 0, 0.3);         
+}
+
+.nina .top p {
+    font-size: 2rem;
+}
+
+
+.nina .bottom {
     display: flex;
     justify-content: center;
     width: 100%;
     max-width: 600px;
     margin-bottom: 4rem;
-  }
-  
-  .chart-container {
-    width: 80%;
-    margin: auto;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  .dataCard {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  @media screen and (Max-width:540px) {
+}
+
+
+
+@media screen and (Max-width:540px) {
     .power .container .bottom {
-      flex-direction: column;
-      align-items: center;
+        flex-direction: column;
+        align-items: center;
     }
-  }
-  
+
+    .nina .top h1 {
+        font-size: 1.2rem; /* Kleinere tekst voor mobiel */
+    }
+
+    .nina .top p {
+        font-size: 1rem; /* Verklein de paragrafen tekst */
+    }
+}
+
+@media screen and (max-width:700px) {
+    .nina .top {
+        margin-left: 20px; /* Verwijder de negatieve marge voor mobiel */
+        margin-top: 50px;
+        margin-right: 20px; /* Verklein de marge aan de bovenkant */
+        padding: 2%; /* Geef meer ruimte aan de binnenkant voor een betere leesbaarheid */
+        background-size: cover;
+    }
+}
