@@ -72,6 +72,21 @@
     .nina .top p {
         font-size: 1rem; /* Verklein de paragrafen tekst */
     }
+
+    .nina .portrait {
+        position: relative; /* Verwijdert de `relative` en `right` styling voor mobiel */
+        top: 200px; /* Reset de top-waarde */
+        right: auto; /* Reset de right-waarde */
+        display: flex;
+        justify-content: center; /* Centreer het portret horizontaal */
+    }
+
+    .nina-portret {
+        width: 250px; /* Maak het portret kleiner voor mobiel */
+        height: 250px;
+        border-radius: 50%; /* Zorg dat het rond blijft */
+        box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3); /* Schaduw aanpassen voor kleinere afmetingen */
+    }
 }
 
 @media screen and (max-width:700px) {

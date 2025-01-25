@@ -20,8 +20,9 @@ const Pagina6 = () => {
     const radius = Math.min(width, height) / 2;
 
     const svg = d3.select(pieChartRef.current)
-      .attr('width', width)
-      .attr('height', height)
+      .attr('width', '100%')
+      .attr('height', '100%')
+      .attr('viewBox', `0 0 ${width} ${height}`)  // Voeg viewBox toe voor responsiviteit
       .append('g')
       .attr('transform', `translate(${width / 2}, ${height / 2})`);
       
@@ -51,7 +52,7 @@ const Pagina6 = () => {
       .attr('transform', d => `translate(${arc.centroid(d)})`)
       .attr('text-anchor', 'middle')
       .text(d => d.data.label)
-      .style('font-size', '10px');
+      .style('font-size', '40px');
   }, []);
 
   useEffect(() => {
@@ -63,52 +64,69 @@ const Pagina6 = () => {
       { category: 'Vervoer', value: 80 },
       { category: 'Overig', value: 70 },
     ];
+  
+    const width = 800; // Verklein de breedte van de grafiek
+const height = 300; // Verklein de hoogte van de grafiek
+const margin = { top: 20, right: 30, bottom: 40, left: 50 }; // Pas de margin aan om de grafiek meer compact te maken
 
-    const width = 400;
-    const height = 300;
-    const margin = { top: 20, right: 30, bottom: 40, left: 50 };
+const svg = d3.select(barChartRef.current)
+  .attr('width', '100%')
+  .attr('height', '100%')
+  .attr('viewBox', `0 0 ${width + margin.left + margin.right} ${height + margin.top + margin.bottom}`)
+  .append('g')
+  .attr('transform', `translate(${margin.left}, ${margin.top})`);
 
-    const svg = d3.select(barChartRef.current)
-      .attr('width', width + margin.left + margin.right)
-      .attr('height', height + margin.top + margin.bottom)
-      .append('g')
-      .attr('transform', `translate(${margin.left}, ${margin.top})`);
+const xScale = d3.scaleBand()
+  .domain(barData.map(d => d.category))
+  .range([0, width])
+  .padding(0.1); // De padding bepaalt de afstand tussen de staven, kun je aanpassen voor kleinere staven
 
-    const xScale = d3.scaleBand()
-      .domain(barData.map(d => d.category))
-      .range([0, width])
-      .padding(0.1);
+const yScale = d3.scaleLinear()
+  .domain([0, d3.max(barData, d => d.value)])
+  .range([height, 0]);
 
-    const yScale = d3.scaleLinear()
-      .domain([0, d3.max(barData, d => d.value)])
-      .range([height, 0]);
+svg.selectAll('*').remove(); // Verwijder bestaande elementen
 
-    svg.selectAll('*').remove(); // Verwijder bestaande elementen
+// Voeg de staven toe met kleinere breedte en hoogte
+svg.selectAll('.bar')
+  .data(barData)
+  .enter()
+  .append('rect')
+  .attr('class', 'bar')
+  .attr('x', d => xScale(d.category))
+  .attr('y', d => yScale(d.value))
+  .attr('width', xScale.bandwidth()) // De breedte van de staven wordt aangepast op basis van de schaal
+  .attr('height', d => height - yScale(d.value)) // De hoogte van de staven wordt kleiner
+  .attr('fill', 'teal');
 
-    // Voeg staven toe
-    svg.selectAll('.bar')
-      .data(barData)
-      .enter()
-      .append('rect')
-      .attr('class', 'bar')
-      .attr('x', d => xScale(d.category))
-      .attr('y', d => yScale(d.value))
-      .attr('width', xScale.bandwidth())
-      .attr('height', d => height - yScale(d.value))
-      .attr('fill', 'teal');
+// Voeg de x-as toe
+svg.append('g')
+  .attr('transform', `translate(0,${height})`)
+  .call(d3.axisBottom(xScale))
+  .selectAll('text')
+  .attr('transform', 'rotate(-40)')
+  .style('text-anchor', 'end');
 
-    // Voeg de x-as toe
-    svg.append('g')
-      .attr('transform', `translate(0,${height})`)
-      .call(d3.axisBottom(xScale))
-      .selectAll('text')
-      .attr('transform', 'rotate(-40)')
-      .style('text-anchor', 'end');
+// Voeg de y-as toe
+svg.append('g')
+  .call(d3.axisLeft(yScale));
 
-    // Voeg de y-as toe
-    svg.append('g')
-      .call(d3.axisLeft(yScale));
+// Kleur en rand voor de X-as labels
+svg.selectAll('text')
+  .style('font-size', '20px')  // Verklein de font-size van de X-as labels
+  .style('fill', 'white')      // Kleur van de tekst
+  .style('stroke', 'black')    // Zwarte rand toevoegen
+  .style('stroke-width', '1px'); // Dikte van de rand (kan aangepast worden)
+
+// Kleur en rand voor de Y-as labels
+svg.selectAll('.y-axis text')
+  .style('font-size', '12px')  // Verklein de font-size van de Y-as labels
+  .style('fill', 'white')      // Kleur van de tekst
+  .style('stroke', 'black')    // Zwarte rand toevoegen
+  .style('stroke-width', '1px'); // Dikte van de rand (kan aangepast worden)
+
   }, []);
+  
 
   return (
     <Parallax bgImage={require('../../assets/padennina.jpg')} strength={300}>

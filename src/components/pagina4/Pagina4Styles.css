@@ -98,10 +98,52 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
   
-  @media screen and (Max-width:540px) {
-    .power .container .bottom {
-      flex-direction: column;
-      align-items: center;
-    }
+  /* Media Query voor mobiele schermen */
+@media screen and (max-width: 540px) {
+  .pagina3 .container {
+    height: auto; /* Verwijder de vaste hoogte voor mobiel */
+    margin-bottom: 1rem; /* Voeg ruimte onderaan toe */
+    height: 100vh;
   }
+
+  .text-box,
+  .second-text-box,
+  .third-text-box {
+    max-width: 90%; /* Zorg dat de boxen de breedte van het scherm gebruiken */
+    font-size: 18px; /* Verklein de tekst voor kleinere schermen */
+    padding: 20px; /* Verminder de padding */
+    margin-top: 100px; /* Voeg wat ruimte tussen de boxen toe */
+    position: relative;
+    left: 0; /* Zorg ervoor dat de tekstboxen niet naar rechts verschuiven */
+    top: 0; /* Verwijder de top-margin */
+  }
+
+  .text-box.visible,
+  .second-text-box.visible,
+  .third-text-box.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .pagina3 .top {
+    margin-top: 10rem; /* Zorg ervoor dat de bovenkant van de pagina goed zichtbaar is op mobiel */
+  }
+
+  .bottom {
+    display: flex;
+    flex-direction: column; /* Zet de button onder de tekst op mobiel */
+    align-items: center; /* Centreert de inhoud horizontaal */
+    justify-content: center; /* Centreert de inhoud verticaal */
+    margin-top: 20px;
+  }
+
+  .btn {
+    font-size: 16px; /* Maak de knoptekst kleiner voor mobiel */
+    padding: 10px 20px; /* Pas de knopgrootte aan */
+  }
+
+  .parallax-container {
+    background-attachment: scroll; /* Verwijder het parallax-effect voor mobiel */
+  }
+}
   

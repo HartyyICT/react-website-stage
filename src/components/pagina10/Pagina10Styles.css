@@ -55,4 +55,8 @@
         flex-direction: column;
         align-items: center;
     }
+
+    .image3 img {
+        max-height: 350px; /* Beperk de hoogte van de afbeelding op mobiel om ruimte te besparen */
+    }
 }

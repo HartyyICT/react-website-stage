@@ -261,3 +261,84 @@
     font-weight: bold;
   }
   
+
+  /* Media Queries voor mobiele apparaten */
+@media (max-width: 768px) {
+    .view .top p {
+        font-size: 1.2rem;
+    }
+
+    /* Zorg dat profile-boxen netjes gestapeld worden op mobiel */
+    .view .bottom .profile-box,
+    .view .bottom .profile-box2,
+    .view .bottom .profile-box3,
+    .view .bottom .profile-box4,
+    .view .bottom .profile-box5 {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 10px 0;
+    }
+
+    .view .bottom .profile-box {
+        position: relative;
+        right: 0;
+    }
+
+    .view .bottom .profile-box3 {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .view .bottom .profile-box4 {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .view .bottom .profile-box5 {
+        position: relative;
+        bottom: 0;
+        right: 0;
+    }
+
+    .grade-list, .monthly-costs {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .grade-list table, .monthly-costs table {
+        font-size: 0.9rem;
+    }
+
+    .profile-image {
+        width: 40px;
+        height: 40px;
+    }
+
+    .top {
+        z-index: 15;
+    }
+}
+
+@media (max-width: 480px) {
+    .view .top p {
+        font-size: 1rem;
+    }
+
+    .grade-list h3, .monthly-costs h3 {
+        font-size: 1.2rem;
+    }
+
+    .grade-list table th, 
+    .grade-list table td, 
+    .monthly-costs th, 
+    .monthly-costs td {
+        font-size: 0.9rem;
+    }
+
+    .profile-image {
+        width: 35px;
+        height: 35px;
+    }
+}
